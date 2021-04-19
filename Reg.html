@@ -1,0 +1,533 @@
+<html>
+
+	<head>
+
+		<title>Dewanshu's Sample Test Page</title>
+
+		<meta charset="utf-8">
+
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	  	<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=BeyFDZmzC7vzmpDVbw1WBmEmrTDo9xgd0OKBqQDW1rNY3IPMVf6ycoZY4xhcFc2qTTTMUJjkuDKvHtZqvwwkJy93cMjzDhZyiWKmUSFGy4JaY7dyFFo9CBkKYLo-yKFspaPfazMdWQlmZVsk4w_lvpqhY56xZUqbjUVYVhyxFJrgV7nbtQz8FTkj6U5jT9EjEN8s8bIT7kCT9BeKap8DhOUOoIJuvy0UULzeFRfc76IPbleUAJ-go3bxxZbZaNbplNUhgp_gyC2kLxlDbzsAQO2_dBxsvBESnX010fokTiSdOyeQrnjv4KfYc2She4NFBaoSrTRwd2kFeClcKXdsJ_L654A4i8YzIH9qMPrMZT0v464BfsIOdz_n6AM-AkicH9AT-ifJBZrKZ90Ab_4OhUchk-NT8D6P3gTaDk2s20laeU4TLf40m4uOiHC0kRfr4UMi0f1s1dCGlcEyL4uCTgKXz3kcYVmW5ppja7pxG-h2LASmwBct69vSR8vhBevwAC9sng9tZrnTSr6H_7ztRyzn5wepDPIyvN0KzaQf-vJpIYv8FpDRhyBigYbyB85k5tfew1-Byn52r78IBYIMNG0Jaj2PamloWS2oQ3YpKJgkQxuPPK4ARhjtR95fwqtym6znZtdi4wsINxTO92l0oa2nqISb83DtCihzAS3PWYOUTj8ld8pQRVgEt1AJvd-jwt40RkwFEC6zl5YoffuOc4vziWVJbnvyron39tteDVS_NbuN2diS8uTmlz0mS5xyGQW03h9kydH4yUkFI73G_Kobm3sozLlgIXwXyA9XV-yeIU0hMiq3khYE68VoR0fzSztj7vF0EmjFzKoDf5PDSn-ym6Nh2l0t70UlxgQwgSpC3iILUgWL_4kEjNoRcw3AMDeqgPzDRSyQnGFjSNeIrvFePonSkU5L345UDp59XDnxJiGAarIFmBZCHlMwtqkBEepw1qUFfSHwjHyeiOnX0QFj69cj1VkIgcFBpruMFLaKjg-YVnUDCqepF9H8YRTGa9EmQ5FhkPaAupgHsT8f0QcNVF-WYhUjX95qLbliPIdPJfluxKJTL5iieSz2aZm69Gxjh_FxFmHuARjUFFFp5iLmNKJSXAI8dbr3EEzII3eyi05nEQjPYWnFVtGszb1o3NO5fvTV1L-UNYrz7a1GTC85eElkODVPgu9nRe8f7BLEqICNEgZ-qNeG2ENzfIQk-7OTG-JMGR5lQGNhhEJSxw" nonce="ca9b53b64d9a3791c352169f47736bc0" charset="UTF-8"></script><link rel="stylesheet" crossorigin="anonymous" href="https://gc.kis.v2.scr.kaspersky-labs.com/E3E8934C-235A-4B0E-825A-35A08381A191/abn/main.css?attr=aHR0cHM6Ly9tYWlsLWF0dGFjaG1lbnQuZ29vZ2xldXNlcmNvbnRlbnQuY29tL2F0dGFjaG1lbnQvdS8wLz91aT0yJmlrPWRiODc3YzEzYjgmYXR0aWQ9MC4xJnBlcm1tc2dpZD1tc2ctYTpyLTY2NDU3ODA1MTg4MzA3MzM1ODYmdGg9MTc4ODhiODdlN2IzODE3ZiZ2aWV3PWF0dCZkaXNwPXNhZmUmcmVhbGF0dGlkPWZfa214aGprYjIwJnNhZGRiYXQ9QU5HamRKOFdvQjBVa2ZMV24xejhVcjUwb2oyeWdNUVBjZjM4aGdMVUVlR0lVSm13NWJoZ0VscGhKbG0ySEhCVUowWlVYelJ6S0Vkeng3ZXBldnI1cHA0Q3k1OW43RmxtZVM3NUZEcWF3clF0T2VxQUhQMUJCNmg3S1BEY2EtZktHb1V1NGtTSzBhZ2JFbkNFeklwNm9zdDFaM3g2S05yNEpaaGVBZTJxNXdVU3YyNG1xNGdoX3Rmb2xyQl93dlhQMGhDeE0xWWpSa040WmNHbEQ3cE9uMVV6aHZCbUV3UW1oR0JQUnktS0tKT0ljUEhEaEd1TnlObExPZ1lsM0NYTzZqMVEyWkM3RlRBRXVIZ3pJdThHdjRfRHhQeHcyYmVyWUJCNG9tc2NtVU51cW95LWQ0QW9MdF9WX0RNNExkTEhoN2VOTjdlZ3FPQTFFbTZNMUR4a0RkQUVwejRkcGhkY2ZhNDdiZE5rWkJlWmpOcFdpZEFCNU1qSWtRcW9fbTVhbTFVbFdBdVFtbWd2WF95V1VudWJXN0ZySU83VVhXVy1lalJDemRHVTQ5VGpMM2JOY24xU0phd3p3aXkyU09iZGZXLUJGWTd0cDlHQVZkOHY1dGIxZ3BoX1BiRFF5eUxqemhiZFhsdWhLSWF1YmFOX1hnQk1GNFRhQTVtZ2ZqOEQ5YVFtTkgzOFl1SzBacF83bW5EdURYUDhWRnF4OGFmUEY1VGdqX3hHdUdWM0dXVFhCQ0pZVUxwWVBqTm0wMm9HXzZyRE9jdlpLM2RZaU9NMnFkcURWM3V2RnRLb0Rva1lFUndZOHVPSmZtYTE0SzVnZG9ZTXZBTHpEZ0RmSVgyeUR4RXJfdkNFNzQxSFlrc2NCMTBFSlpDVzFQdnluN0Vxd0FTSy1waFE2b0gwZzUyNG5lSjFTc1NYdmRVTVlJVQ"/><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<style></style>
+
+	</head>
+
+	<body style="font-family: cursive;">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-offset-2 col-md-8" style="font-size: 30; margin-top: 40px; ">
+
+					Dewanshu's Sample WebPage for Automation Testing
+
+				</div>
+
+			</div>
+
+
+
+			<div class="row">
+
+				<div class="col-md-12" style="font-size:20px; margin-top:40px;">
+
+					This is sample webpage with dummy elements that will help you in learning selenium automation.
+
+				</div>
+
+			</div>
+
+			<br>
+
+			<div class="row">
+
+				<div class="col-md-12" style="font-size:15px;">
+
+		
+					<h3>This is sample texting</h3>
+
+				</div>
+
+			</div>
+
+
+
+			<div class="row">
+
+				<div class="col-md-12" style="font-size:15px;">
+
+					<p> <b>Link : </b><a href="https://www.yesmadam.com/welcome">I am a link please click me</a></p>
+
+				</div>
+
+			</div>
+
+
+
+			<div class="row">
+
+				<div class="col-md-12" style="font-size:15px;">
+
+					<p><b>TextBox : </b><input id="fname" type="text" name="firstName" ></p>
+
+				</div>
+
+			</div>
+
+			
+			<div class="row">
+
+				<div class="col-md-12" style="font-size:15px;">
+
+					<p><b>Button : </b><button id="idOfButton" title="Click me!!" type="button" onclick="this.style.background='blue';">Submit</button></p>
+
+				</div>
+
+			</div>
+
+
+			<div class="row">
+
+				<div class="col-md-12" style="font-size:15px;">
+
+					<p><b>Radio button : </b> 
+
+						<form action="#">
+
+							<input id="male" type="radio" name="gender" value="male"> Male  
+
+							<input id="female" type="radio" name="gender" value="female"> Female
+							
+							<input id="other" type="radio" name="gender" value="other"> Other
+							
+
+						</form>
+
+					</p>
+
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<div class="col-md-12" style="font-size:15px;">
+
+					<p><b>Checkbox :</b>
+
+						<form action="#">
+
+							<input type="checkbox" class="Automation" value="Automation"> Automation Testing
+
+							<input type="checkbox" class="Performance" value="Performance"> Performance Testing
+							
+							<input type="checkbox" class="Functional" value="Functional"> Functional Testing
+
+						</form>
+
+					</p>
+
+				</div>
+
+			</div>
+			
+			
+			
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height:100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+<h4>Card Flip with Text</h4>
+<h4>Hover over the image below:</h4>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://www.yesmadam.com/assets/imgs/ym-logo-round.png" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Dewanshu</h1> 
+      <p>Architect & Test Engineer</p> 
+      <p>I love to do this</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+<div>
+
+<h3>Details :</h3>
+
+<form target="_blank" onsubmit="try {return window.confirm(&quot;This form may not function properly due to certain security constraints.\nContinue?&quot;);} catch (e) {return false;}">
+
+<p style="color:orange">Frist Name : <input type="text"></p>
+
+Last Name : <input type="text">
+<p>
+</p>
+
+Your Contact No : <input type="text">
+
+<br><p>
+
+<p style="color:green">Enter the Password : <input type="password"><br><p></p>
+
+Re-Enter the Password : <input type="password">
+
+<br><p>
+
+<p style="color:red">Frther&#39;s Name : <input type="text"><p></p>
+
+<p style="color:blue">Mother&#39;s Name : <input type="text"><br><p></p>
+
+Address 1 : <input type="text">
+
+<p></p>
+
+Address 2 : <input type="text"><br><p>
+
+<b>
+
+</div></body></html>
+
+			<div class="row">
+
+				<div class="col-md-12" style="font-size:15px;">
+
+					<p><b>Drop down :</b>
+
+						<select id="testingDropdown">
+
+							<option id="select" value="Select">Select</option>
+							
+							<option id="sullstack" value="Full Stack">0. Full Stack Testing</option>
+							
+							<option id="automation" value="Automation">1. Automation Testing</option>
+
+							<option id="performance" value="Performance">2. Performance Testing</option>
+
+							<option id="manual" value="Manual">3. Manual Testing</option>
+
+							<option id="database" value="Database">4. Database Testing</option>
+							
+							<option id="agile" value="Agile">5. Agile</option>
+							
+							<option id="functional" value="Functional">6. Functional Testing</option>
+							
+							<option id="non functional" value="Non Functional">7. Non Functional Testing</option>
+							
+							<option id="api" value="API">8. API Testing</option>
+							
+
+						</select>
+
+					</p>
+
+				</div>
+
+			</div>
+			
+			
+			<div class="row">
+
+				<div class="col-md-12" style="font-size:15px;">
+
+					<p><b>Drop down :</b>
+
+						<select id="CountryDropdown">
+						
+							<option id="select" value="Select">Select</option>
+
+							<option id="india" value="India">0. India</option>
+							
+							<option id="kuwait" value="Kuwait">1. Kuwait</option>
+
+							<option id="pakistan" value="Pakistan">2. Pakistan</option>
+
+							<option id="afghanistan" value="Afghanistan">3. Afghanistan</option>
+
+							<option id="albania" value="Albania">4. Albania</option>
+							
+							<option id="algeria" value="Algeria">5. Algeria</option>
+							
+							<option id="andorra" value="Andorra">6. Andorra</option>
+							
+							<option id="brazil" value="Brazil">7. Brazil</option>
+							
+							<option id="bulgaria" value="Bulgaria">8. Bulgaria</option>
+							
+							<option id="cyprus" value="Cyprus">9. Cyprus</option>
+							
+							<option id="cuba" value="Cuba">10. Cuba</option>
+							
+							<option id="fiji" value="Fiji">12. Albania</option>
+							
+							<option id="egypt" value="Egypt">13. Egypt</option>
+							
+							<option id="finland" value="Finland">14. Finland</option>
+							
+							<option id="germany" value="Germany">15. Germany</option>
+							
+							<option id="France" value="France">16. France</option>
+							
+							<option id="gabon" value="Gabon">17. Gabon</option>
+							
+							<option id="greece" value="Greece">18. Greece</option>
+							
+							<option id="ghana" value="Ghana">19. Ghana</option>
+							
+							<option id="gambia" value="Gambia">20. Gambia</option>
+							
+							
+						</select>
+
+					</p>
+
+				</div>
+
+			</div>
+			
+<head>
+
+
+
+			<div class="row">
+
+				<div class="col-md-12" style="font-size:15px;">
+
+					<b>Calendar :</b>
+
+				</div>
+
+			</div>
+
+
+
+<input type="date">
+
+<form action="birthdate.php" method="post" name="bdate" style="margin-left:50px;">
+	<h4>Open this page in Chrome</h4>
+  <span style="font-size:16px;font-weight:400;">Birthday (date and time):</span> <input type="datetime-local" name="bdaytime">
+  <input type="submit">
+</form>
+
+<p>
+<br>
+
+			<div class="row">
+
+				<div class="col-md-12" style="font-size:15px;">
+
+					<p><button id="dblClkBtn" ondblclick="alert('Hi, YesMadam Testing');">Double-click to generate alert box</button></p>
+
+				</div>
+
+			</div>
+
+						
+</p>
+
+
+			<div class="row">
+
+				<div class="col-md-12" style="font-size:15px;">
+
+					<p><b>Click button to generate Alert box : </b>
+
+					  	<button onclick="alert('Hi, YesMadam Testing');">Generate Alert Box</button>
+
+					</p>
+
+				</div>
+
+			</div>
+
+			<br>
+
+
+
+			<div class="row">
+
+				<div class="col-md-12" style="font-size:15px;">
+
+					<p> <b> Click button to generate Confirm box : </b>
+
+						<button onclick="generateConfirmBox()">Generate Confirm Box</button>
+
+					</p>
+
+					<p id="demo"></p>
+
+				</div>
+
+			</div>
+
+			<br>
+
+
+
+			<div class="row">
+
+				<div class="col-md-12" style="font-size:15px;">
+
+					<p>Drag and drop example- drag the below image on the textbox</p>
+
+					
+
+					<div id="targetDiv" ondrop="drop(event)" ondragover="allowDrop(event)" style="width:400px;height:150px;padding:10px;border:1px solid #aaaaaa;"></div>
+					
+					
+					
+
+					<img id="sourceImage" src="https://www.yesmadam.com/assets/imgs/ym-logo-round.png" alt="YesMadam Testing" draggable="true" ondragstart="drag(event)" height="120px">
+
+
+
+					<!-- <a href="ttps://www.yesmadam.com/assets/imgs/ym-logo-round.png"><img src="https://www.yesmadam.com/assets/imgs/ym-logo-round.png" alt="jtp" border="0"></a>
+
+ -->
+
+				</div>
+
+			</div>
+
+			<br>
+
+
+		</div>
+
+
+
+		<script>
+
+			function generateConfirmBox()
+
+			{
+
+				var x;
+
+				var r=confirm("Press a button!");
+
+				if (r==true)
+
+				{
+
+					x="Your Request pressed OK!";
+
+				}
+
+				else
+
+				{
+
+					x="Your Request pressed Cancel!";
+
+				}
+
+				document.getElementById("demo").innerHTML=x;
+
+			}
+
+
+
+			function allowDrop(ev)
+
+			{
+
+				ev.preventDefault();
+
+			}
+
+
+
+			function drag(ev)
+
+			{
+
+				ev.dataTransfer.setData("Text",ev.target.id);
+
+			}
+
+
+
+			function drop(ev)
+
+			{
+
+				ev.preventDefault();
+
+				var data=ev.dataTransfer.getData("Text");
+
+				ev.target.appendChild(document.getElementById(data));
+
+			}
+
+
+
+		</script>
+
+	</body>
+
+</html>
+
+

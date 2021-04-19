@@ -1,0 +1,1070 @@
+<DOCT>
+<html>
+
+<head>
+
+<title>Dewanshu's Sample Test Page</title>
+
+<meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<style></style>
+
+</head>
+
+<body style="font-family: cursive;">
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-md-offset-2 col-md-8" style="font-size: 30; margin-top: 40px; ">
+
+Dewanshu's Sample WebPage for Automation Testing
+
+</div>
+
+</div>
+
+
+
+<div class="row">
+
+<div class="col-md-12" style="font-size:20px; margin-top:40px;">
+
+This is sample webpage with dummy elements that will help you in learning selenium automation.
+
+</div>
+
+</div>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 4px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+ 
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h4>Modal Login Form</h4>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+ 
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://www.yesmadam.com/assets/imgs/ym-logo-round.png" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+       
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 4px 20px;
+  //font-size: 20px;
+  border: black-space;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+<body>
+
+<h4>Hoverable Dropdown</h4>
+<p>Move the mouse over the button to open the dropdown menu.</p>
+
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+    <a href="https://www.yesmadam.com/welcome">Home</a>
+    <a href="https://yesmadam.com/blog/">Blog</a>
+    <a href="https://www.yesmadam.com/sanitization">Sanitization</a>
+<a href="https://www.yesmadam.com/donate-now">Donate</a>
+<a href="https://www.yesmadam.com/franchise">Franchise</a>
+<a href="https://www.yesmadam.com/privacy-policy">Privacy Policy</a>
+<a href="https://www.yesmadam.com/faqs">FAQs</a>
+<a href="https://www.yesmadam.com/contact-us">ContactUS</a>
+<a href="https://www.yesmadam.com/about-us">AboutUS</a>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+var subjectObject = {
+  "Front-end": {
+    "HTML": ["Links", "Images", "Tables", "Lists"],
+    "CSS": ["Borders", "Margins", "Backgrounds", "Float"],
+    "JavaScript": ["Variables", "Operators", "Functions", "Conditions"]    
+  },
+  "Back-end": {
+    "PHP": ["Variables", "Strings", "Arrays"],
+    "SQL": ["SELECT", "UPDATE", "DELETE"]
+  }
+}
+window.onload = function() {
+  var subjectSel = document.getElementById("subject");
+  var topicSel = document.getElementById("topic");
+  var chapterSel = document.getElementById("chapter");
+  for (var x in subjectObject) {
+    subjectSel.options[subjectSel.options.length] = new Option(x, x);
+  }
+  subjectSel.onchange = function() {
+    //empty Chapters- and Topics- dropdowns
+    chapterSel.length = 1;
+    topicSel.length = 1;
+    //display correct values
+    for (var y in subjectObject[this.value]) {
+      topicSel.options[topicSel.options.length] = new Option(y, y);
+    }
+  }
+  topicSel.onchange = function() {
+    //empty Chapters dropdown
+    chapterSel.length = 1;
+    //display correct values
+    var z = subjectObject[subjectSel.value][this.value];
+    for (var i = 0; i < z.length; i++) {
+      chapterSel.options[chapterSel.options.length] = new Option(z[i], z[i]);
+    }
+  }
+}
+</script>
+</head>  
+<body>
+
+<h4>Cascading Dropdown Example</h4>
+
+<form name="form1" id="form1" action="/action_page.php">
+Subjects: <select name="subject" id="subject">
+    <option value="" selected="selected">Select subject</option>
+  </select>
+  <br><br>
+Topics: <select name="topic" id="topic">
+    <option value="" selected="selected">Please select subject first</option>
+  </select>
+  <br><br>
+Chapters: <select name="chapter" id="chapter">
+    <option value="" selected="selected">Please select topic first</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">  
+</form>
+
+</body>
+</html>
+
+
+
+<div class="row">
+
+<div class="col-md-12" style="font-size:15px;">
+
+
+<h3>This is sample texting</h3>
+
+</div>
+
+</div>
+
+
+
+<div class="row">
+
+<div class="col-md-12" style="font-size:15px;">
+
+<p> <b>Link : </b><a href="https://www.yesmadam.com/welcome">I am a link please click me</a></p>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<div class="row">
+
+<div class="col-md-12" style="font-size:15px;">
+
+<p><b>TextBox : </b><input id="fname" type="text" name="firstName" ></p>
+
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div class="col-md-12" style="font-size:15px;">
+
+<p><b>Button : </b><button id="idOfButton" title="Click me!!" type="button" onclick="this.style.background='blue';">Submit</button></p>
+
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div class="col-md-12" style="font-size:15px;">
+
+<p><b>Radio button : </b>
+
+<form action="#">
+
+<input id="male" type="radio" name="gender" value="male"> Male  
+
+<input id="female" type="radio" name="gender" value="female"> Female
+
+<input id="other" type="radio" name="gender" value="other"> Other
+
+
+</form>
+
+</p>
+
+</div>
+
+</div>
+
+<div class="row">
+
+<div class="col-md-12" style="font-size:15px;">
+
+<p><b>Checkbox :</b>
+
+<form action="#">
+
+<input type="checkbox" class="Automation" value="Automation"> Automation Testing
+
+<input type="checkbox" class="Performance" value="Performance"> Performance Testing
+
+<input type="checkbox" class="Functional" value="Functional"> Functional Testing
+
+</form>
+
+</p>
+
+</div>
+
+</div>
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h4>Typewriter</h4>
+
+<button onclick="typeWriter()">Click me Please</button>
+
+<p id="demo"></p>
+
+<script>
+var i = 0;
+var txt = 'Hey my name is Dewanshu thank you for the clicking me.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height:100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+</head>
+<body>
+
+<h4>Card Flip with Text</h4>
+<h4>Hover over the image below:</h4>
+
+<div class="flip-card">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="https://www.yesmadam.com/assets/imgs/ym-logo-round.png" alt="Avatar" style="width:200px;height:200px;">
+    </div>
+    <div class="flip-card-back">
+      <h1>Dewanshu</h1>
+      <p>Architect & Test Engineer</p>
+      <p>I love to do this</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+
+
+<div>
+
+<h3>Details :</h3>
+
+<form target="_blank" onsubmit="try {return window.confirm(&quot;This form may not function properly due to certain security constraints.\nContinue?&quot;);} catch (e) {return false;}">
+
+<p style="color:orange">Frist Name : <input type="text"></p>
+
+Last Name : <input type="text">
+<p>
+</p>
+
+Your Contact No : <input type="text">
+
+<br><p>
+
+<p style="color:green">Enter the Password : <input type="password"><br><p></p>
+
+Re-Enter the Password : <input type="password">
+
+<br><p>
+
+<p style="color:red">Frther&#39;s Name : <input type="text"><p></p>
+
+<p style="color:blue">Mother&#39;s Name : <input type="text"><br><p></p>
+
+Address 1 : <input type="text">
+
+<p></p>
+
+Address 2 : <input type="text"><br><p>
+
+<b>
+
+</div></body></html>
+
+<div class="row">
+
+<div class="col-md-12" style="font-size:15px;">
+
+<p><b>Drop down :</b>
+
+<select id="testingDropdown">
+
+<option id="select" value="Select">Select</option>
+
+<option id="sullstack" value="Full Stack">0. Full Stack Testing</option>
+
+<option id="automation" value="Automation">1. Automation Testing</option>
+
+<option id="performance" value="Performance">2. Performance Testing</option>
+
+<option id="manual" value="Manual">3. Manual Testing</option>
+
+<option id="database" value="Database">4. Database Testing</option>
+
+<option id="agile" value="Agile">5. Agile</option>
+
+<option id="functional" value="Functional">6. Functional Testing</option>
+
+<option id="non functional" value="Non Functional">7. Non Functional Testing</option>
+
+<option id="api" value="API">8. API Testing</option>
+
+
+</select>
+
+</p>
+
+</div>
+
+</div>
+
+
+<div class="row">
+
+<div class="col-md-12" style="font-size:15px;">
+
+<p><b>Drop down :</b>
+
+<select id="CountryDropdown">
+
+<option id="select" value="Select">Select</option>
+
+<option id="india" value="India">0. India</option>
+
+<option id="kuwait" value="Kuwait">1. Kuwait</option>
+
+<option id="pakistan" value="Pakistan">2. Pakistan</option>
+
+<option id="afghanistan" value="Afghanistan">3. Afghanistan</option>
+
+<option id="albania" value="Albania">4. Albania</option>
+
+<option id="algeria" value="Algeria">5. Algeria</option>
+
+<option id="andorra" value="Andorra">6. Andorra</option>
+
+<option id="brazil" value="Brazil">7. Brazil</option>
+
+<option id="bulgaria" value="Bulgaria">8. Bulgaria</option>
+
+<option id="cyprus" value="Cyprus">9. Cyprus</option>
+
+<option id="cuba" value="Cuba">10. Cuba</option>
+
+<option id="fiji" value="Fiji">12. Albania</option>
+
+<option id="egypt" value="Egypt">13. Egypt</option>
+
+<option id="finland" value="Finland">14. Finland</option>
+
+<option id="germany" value="Germany">15. Germany</option>
+
+<option id="France" value="France">16. France</option>
+
+<option id="gabon" value="Gabon">17. Gabon</option>
+
+<option id="greece" value="Greece">18. Greece</option>
+
+<option id="ghana" value="Ghana">19. Ghana</option>
+
+<option id="gambia" value="Gambia">20. Gambia</option>
+
+
+</select>
+
+</p>
+
+</div>
+
+</div>
+
+<head>
+
+
+
+<div class="row">
+
+<div class="col-md-12" style="font-size:15px;">
+
+<b>Calendar :</b>
+
+</div>
+
+</div>
+
+
+
+<input type="date">
+
+<form action="http://birthdate.php" method="post" name="0.2_bdate" style="margin-left:50px" target="_blank" onsubmit="try {return window.confirm(&quot;This form may not function properly due to certain security constraints.\nContinue?&quot;);} catch (e) {return false;}">
+
+<h4>Open this page in Chrome</h4>
+
+  <span style="font-size:16px;font-weight:400">Birthday (date and time):</span> <input type="datetime-local" name="bdaytime">
+
+  <input type="submit">
+
+</form>
+
+<p>
+
+<!DOCTYPE html>
+<html>
+<title>Pounds to Kilograms Weight Converter</title>
+<body>
+
+<h3>Weight Converter:</h3>
+<p>Type a value in the Pounds field to convert the value to Kilograms:</p>
+
+<p>
+  <label>Pounds</label>
+  <input id="inputPounds" type="number" placeholder="Pounds" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+</p>
+<p>Kilograms: <span id="outputKilograms"></span></p>
+
+<script>
+function weightConverter(valNum) {
+  document.getElementById("outputKilograms").innerHTML=valNum/2.2046;
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<title>Fahrenheit to Celcius Temperature Converter</title>
+<body>
+
+<h3>Temperature Converter:</h3>
+<p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+
+<p>
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Celcius: <span id="outputCelcius"></span></p>
+
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<title>Fahrenheit to Celcius Temperature Converter</title>
+<body>
+
+<h3>Temperature Converter</h3>
+<p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+
+<p>
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Celcius: <span id="outputCelcius"></span></p>
+
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+}
+</script>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<title>MPH to KPH Speed Converter</title>
+<body>
+
+<h3>Speed Converter</h3>
+<p>Type a value in the MPH field to convert the value to KPH:</p>
+
+<p>
+  <label>MPH</label>
+  <input id="inputMPH" type="number" placeholder="MPH" oninput="speedConverter(this.value)" onchange="speedConverter(this.value)">
+</p>
+<p>KPH: <span id="outputKPH"></span></p>
+
+<script>
+function speedConverter(valNum) {
+  document.getElementById("outputKPH").innerHTML=valNum*1.609344;
+}
+</script>
+
+</body>
+</html>
+
+
+ <!doctype html>
+
+<html lang = "en">
+
+   <head>
+
+      <meta charset = "utf-8">
+
+      <title>jQuery UI Datepicker functionality</title>
+
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+
+         rel = "stylesheet">
+
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+
+
+      <!-- Javascript -->
+
+      <script>
+
+         $(function() {
+
+            $( "#datepicker-1" ).datepicker();
+
+         });
+
+      </script>
+
+   </head>
+
+   
+
+   <body>
+
+      <!-- HTML -->
+
+      <div>Calendar: <input type = "text" placeholder="Select Date" id = "datepicker-1"></div>
+
+   </body>
+
+</html>
+
+
+
+</body>
+
+<p>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en-US">
+<body>
+
+<h3>My Web Page</h3>
+
+<div id="piechart"></div>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Work', 8],
+  ['Eat', 2],
+  ['TV', 4],
+  ['Gym', 2],
+  ['Sleep', 8]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'My Average Day', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+<div class="row">
+
+<div class="col-md-12" style="font-size:15px;">
+
+<p><button id="dblClkBtn" ondblclick="alert('Hi, YesMadam Testing');">Double-click to generate alert box</button></p>
+
+</div>
+
+</div>
+
+
+</p>
+
+
+<div class="row">
+
+<div class="col-md-12" style="font-size:15px;">
+
+<p><b>Click button to generate Alert box : </b>
+
+  <button onclick="alert('Hi, YesMadam Testing');">Generate Alert Box</button>
+
+</p>
+
+</div>
+
+</div>
+
+<br>
+
+<div class="row">
+
+<div class="col-md-12" style="font-size:15px;">
+
+<p> <b> Click button to generate Confirm box : </b>
+
+<button onclick="generateConfirmBox()">Generate Confirm Box</button>
+
+</p>
+
+<p id="demo"></p>
+
+</div>
+
+</div>
+
+<br>
+
+
+
+<div class="row">
+
+<div class="col-md-12" style="font-size:15px;">
+
+<p>Drag and drop example- drag the below image on the textbox</p>
+
+
+
+<div id="targetDiv" ondrop="drop(event)" ondragover="allowDrop(event)" style="width:400px;height:150px;padding:10px;border:1px solid #aaaaaa;"></div>
+
+
+
+
+<img id="sourceImage" src="https://www.yesmadam.com/assets/imgs/ym-logo-round.png" alt="YesMadam Testing" draggable="true" ondragstart="drag(event)" height="120px">
+
+
+
+<!-- <a href="ttps://www.yesmadam.com/assets/imgs/ym-logo-round.png"><img src="https://www.yesmadam.com/assets/imgs/ym-logo-round.png" alt="jtp" border="0"></a>
+
+ -->
+
+</div>
+
+</div>
+
+<br>
+
+
+</div>
+
+
+
+<script>
+
+function generateConfirmBox()
+
+{
+
+var x;
+
+var r=confirm("Press a button!");
+
+if (r==true)
+
+{
+
+x="Your Request pressed OK!";
+
+}
+
+else
+
+{
+
+x="Your Request pressed Cancel!";
+
+}
+
+document.getElementById("demo").innerHTML=x;
+
+}
+
+
+
+function allowDrop(ev)
+
+{
+
+ev.preventDefault();
+
+}
+
+
+
+function drag(ev)
+
+{
+
+ev.dataTransfer.setData("Text",ev.target.id);
+
+}
+
+
+
+function drop(ev)
+
+{
+
+ev.preventDefault();
+
+var data=ev.dataTransfer.getData("Text");
+
+ev.target.appendChild(document.getElementById(data));
+
+}
+
+
+
+</script>
+
+</body>
+
+</html>
+
