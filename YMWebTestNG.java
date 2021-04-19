@@ -6,17 +6,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
-public class YesMadamWeb {
-
-	public static void main(String[] args) throws InterruptedException {
-
-		   System.setProperty("webdriver.chrome.driver", "C:\\Users\\erdew\\Desktop\\Seleniumfiles\\chromedriver.exe");
-	       WebDriver driver = new ChromeDriver();
+public class YMWebTestNG {
+	WebDriver driver;
+	@Test
+	public void yesmadamweb() throws InterruptedException {
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\erdew\\Desktop\\Seleniumfiles\\chromedriver.exe");
+	    WebDriver driver = new ChromeDriver();
 	       
 	       JavascriptExecutor js = (JavascriptExecutor) driver;
 
-      driver.get("https://www.yesmadam.com/welcome");
+   driver.get("https://www.yesmadam.com/welcome");
 	          String strUrl = driver.getCurrentUrl();
 	          System.out.println("Current Url is:"+ strUrl);
 	          System.out.println("Page title is : " + driver.getTitle());
@@ -26,16 +27,17 @@ public class YesMadamWeb {
 	       Actions action = new Actions(driver);
 	       
 		   driver.findElement(By.id("hmbrgrMenu")).click(); 
-       WebElement elesanitization = driver.findElement(By.xpath("//a[text()=' Sanitization ']")); 
+    WebElement elesanitization = driver.findElement(By.xpath("//a[text()=' Sanitization ']")); 
 		       String strUr2 = driver.getCurrentUrl();
 		       System.out.println("Current Url is:"+ strUr2);
 		       System.out.println("Page title is : " + driver.getTitle());
 
 		   action.moveToElement(elesanitization).click().perform();
+		   
 		   Thread.sleep(3000);
 		   driver.findElement(By.id("hmbrgrMenu")).click();
 		   Thread.sleep(3000);
-    	WebElement eledonate=driver.findElement(By.xpath("//a[text()=' Donate ']"));
+ 	WebElement eledonate=driver.findElement(By.xpath("//a[text()=' Donate ']"));
 		       String strUr3 = driver.getCurrentUrl();
 		       System.out.println("Current Url is:"+ strUr3);
 		       System.out.println("Page title is : " + driver.getTitle());
@@ -95,8 +97,7 @@ public class YesMadamWeb {
 		       System.out.println("Page title is : " + driver.getTitle());
 
 			 action.moveToElement(elePicassos).click().perform();
-			 
-
+			
 			   Thread.sleep(3000);
 			 driver.findElement(By.id("hmbrgrMenu")).click();
 			 
@@ -127,6 +128,7 @@ public class YesMadamWeb {
 			 String strUr11 = driver.getCurrentUrl();
 		     System.out.println("Current Url is:"+ strUr11);
 		     System.out.println("Page title is : " + driver.getTitle());
+		     
 			 action.moveToElement(eleFAQ).click().perform();
 			 
 			 Thread.sleep(3000);
@@ -137,6 +139,7 @@ public class YesMadamWeb {
 			 String strUr12 = driver.getCurrentUrl();
 		     System.out.println("Current Url is:"+ strUr12);
 		     System.out.println("Page title is : " + driver.getTitle());
+		     
 			 action.moveToElement(eleContactUS).click().perform();
 			 
 			 Thread.sleep(3000);
@@ -147,6 +150,7 @@ public class YesMadamWeb {
 			 String strUr13 = driver.getCurrentUrl();
 		     System.out.println("Current Url is:"+ strUr13);
 		     System.out.println("Page title is : " + driver.getTitle());
+		     
 			 action.moveToElement(eleCart).click().perform();
 			 
 			 Thread.sleep(3000);
@@ -156,6 +160,7 @@ public class YesMadamWeb {
 			 String strUr14 = driver.getCurrentUrl();
 		     System.out.println("Current Url is:"+ strUr14);
 		     System.out.println("Page title is : " + driver.getTitle());
+		     
 			 action.moveToElement(eleAboutUS).click().perform();
 
 			 Thread.sleep(3000);
@@ -163,6 +168,7 @@ public class YesMadamWeb {
 			 String strUr15 = driver.getCurrentUrl();
 		     System.out.println("Current Url is:"+ strUr15);
 		     System.out.println("Page title is : " + driver.getTitle());
+		     
 			 action.moveToElement(eleheaderdonate).click().perform();
 			
 			 Thread.sleep(3000);
@@ -170,6 +176,7 @@ public class YesMadamWeb {
 			 String strUr16 = driver.getCurrentUrl();
 		     System.out.println("Current Url is:"+ strUr16);
 		     System.out.println("Page title is : " + driver.getTitle());
+		     
 			 action.moveToElement(eleheaderteamofpicassos).click().perform();
 			 
 			 Thread.sleep(3000);
@@ -177,6 +184,7 @@ public class YesMadamWeb {
 			 String strUr17 = driver.getCurrentUrl();
 		     System.out.println("Current Url is:"+ strUr17);
 		     System.out.println("Page title is : " + driver.getTitle());
+		     
 			 action.moveToElement(eleheaderfranchise).click().perform();
 			 
 			 Thread.sleep(3000);
@@ -184,6 +192,7 @@ public class YesMadamWeb {
 			 String strUr18 = driver.getCurrentUrl();
 		     System.out.println("Current Url is:"+ strUr18);
 		     System.out.println("Page title is : " + driver.getTitle());
+		     
 			 action.moveToElement(elehome).click().perform();
 			 
 			 Thread.sleep(3000);
@@ -191,6 +200,7 @@ public class YesMadamWeb {
 			 String strUr19 = driver.getCurrentUrl();
 		     System.out.println("Current Url is:"+ strUr19);
 		     System.out.println("Page title is : " + driver.getTitle());
+		     
 			 action.moveToElement(eleCarticon).click().perform();
 			 
 			 Thread.sleep(3000);
@@ -198,10 +208,10 @@ public class YesMadamWeb {
 			 String strUr20 = driver.getCurrentUrl();
 		     System.out.println("Current Url is:"+ strUr20);
 		     System.out.println("Page title is : " + driver.getTitle());
+		     
 		     action.moveToElement(eleok).click().perform();
 			 		
 	     driver.quit();
-
 
 	}
 
